@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="550.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.FinishAddController">
+   <children>
+      <Label layoutX="134.0" layoutY="55.0" text="Add New Finish">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="54.0" layoutY="128.0" text="Finish Color:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="198.0" text="Manufacturer:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="266.0" text="Finish Type:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="colorField" layoutX="154.0" layoutY="124.0" prefHeight="27.0" prefWidth="203.0" promptText="color" />
+      <TextField fx:id="mfgField" layoutX="154.0" layoutY="194.0" prefHeight="27.0" prefWidth="203.0" promptText="manufacturer" />
+      <TextField fx:id="typeField" layoutX="154.0" layoutY="262.0" prefHeight="27.0" prefWidth="203.0" promptText="type" />
+      <Button defaultButton="true" layoutX="171.0" layoutY="416.0" mnemonicParsing="false" onAction="#saveBtnPressed" text="Save">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

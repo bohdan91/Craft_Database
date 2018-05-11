@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXML.InventoryAddController">
+   <children>
+      <Label layoutX="140.0" layoutY="30.0" text="Add new Inventory Item">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="84.0" text="Item Name:" />
+      <Label layoutX="30.0" layoutY="118.0" text="Manufacture Price: $" />
+      <Label layoutX="70.0" layoutY="155.0" text="Retail Price:  $" />
+      <Label layoutX="41.0" layoutY="188.0" text="Wholesale Price:  $" />
+      <Button fx:id="addButton" defaultButton="true" layoutX="330.0" layoutY="511.0" mnemonicParsing="false" onAction="#addBtnPressed" prefHeight="40.0" prefWidth="70.0" text="Save" />
+      <Button fx:id="cleraBtn" focusTraversable="false" layoutX="35.0" layoutY="511.0" mnemonicParsing="false" onAction="#clearBtnPressed" prefHeight="40.0" prefWidth="70.0" text="Clear" />
+      <TextField fx:id="itemNameField" layoutX="177.0" layoutY="79.0" prefHeight="27.0" prefWidth="202.0" />
+      <TextField fx:id="mfgPriceField" layoutX="177.0" layoutY="113.0" prefHeight="27.0" prefWidth="93.0" />
+      <TextField fx:id="retailPriceField" layoutX="177.0" layoutY="150.0" prefHeight="27.0" prefWidth="93.0" />
+      <TextField fx:id="wholesalePriceField" layoutX="177.0" layoutY="183.0" prefHeight="27.0" prefWidth="93.0" />
+      <ListView fx:id="availableFinishesList" layoutX="23.0" layoutY="346.0" prefHeight="140.0" prefWidth="385.0" />
+      <Label layoutX="31.0" layoutY="326.0" text="Available Finishes:" />
+      <ChoiceBox fx:id="finishesChoice" layoutX="23.0" layoutY="260.0" prefHeight="27.0" prefWidth="303.0" />
+      <Label layoutX="25.0" layoutY="236.0" text="Add Available Finishes:" />
+      <Button layoutX="365.0" layoutY="260.0" mnemonicParsing="false" onAction="#addFinishBtnPressed" text="Add" />
+   </children>
+</AnchorPane>
